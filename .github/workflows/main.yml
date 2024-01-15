@@ -15,7 +15,7 @@ jobs:
       - name: verifier version npm
         run: |
           npm --version
-          npm install
+        #   npm install
       - name: Installer Angular
         run: sudo npm install -g @angular/cli
       - name: créer un dossier Angular
