@@ -1,0 +1,45 @@
+name: Hugues Workflow
+on:
+  push:
+    branches: [main]
+
+jobs:
+  buildAPP:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo "Checking Out" >> file.txt
+      - name: Installer Node
+        run: echo "Installing Node" >> file.txt
+      - name: Installer Angular
+        run: echo "Installing Angular" >> file.txt
+      - name: Telecharger les dépendances
+        run: echo "Downloading Dependencies" >> file.txt
+      - name: build
+        run: echo "build" >> file.txt
+  TestAPP:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo "Checking Out" >> file.txt
+      - name: Installer Node
+        run: echo "Installing Node" >> file.txt
+      - name: Installer Angular
+        run: echo "Installing Angular" >> file.txt
+      - name: Telecharger les dépendances
+        run: echo "Downloading Dependencies" >> file.txt
+      - name: build
+        run: echo "build" >> file.txt
+  DeployAPP:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo "Checking Out" >> file.txt
+      - name: Installer Node
+        run: echo "Installing Node" >> file.txt
+      - name: Installer Angular
+        run: echo "Installing Angular" >> file.txt
+      - name: Telecharger les dépendances
+        run: echo "Downloading Dependencies" >> file.txt
+      - name: build
+        run: echo "build" >> file.txt
