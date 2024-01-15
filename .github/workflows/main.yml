@@ -16,10 +16,6 @@ jobs:
         run: npm install
       - name: Installer Angular
         run: sudo npm install -g @angular/cli
-      - name: créer un dossier Angular
-        run: ng new buildAngular
-      - name: changer de dossier
-        run: cd buildAngular
       - name: build
         run: |
           ng build
