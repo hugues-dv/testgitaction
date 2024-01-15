@@ -7,39 +7,13 @@ jobs:
   buildAPP:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        run: echo "Checking Out" >> file.txt
-      - name: Installer Node
-        run: echo "Installing Node" >> file.txt
+      - name: update la vm
+        run: sudo apt-get update
+      - name: installer Node JS
+        run: sudo apt-get install -y nodejs
+      - name: Installer npm
+        run: sudo apt-get install npm@latest -g
       - name: Installer Angular
-        run: echo "Installing Angular" >> file.txt
-      - name: Telecharger les dépendances
-        run: echo "Downloading Dependencies" >> file.txt
+        run: sudo npm install -g @angular/cli
       - name: build
-        run: echo "build" >> file.txt
-  TestAPP:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        run: echo "Checking Out" >> file.txt
-      - name: Installer Node
-        run: echo "Installing Node" >> file.txt
-      - name: Installer Angular
-        run: echo "Installing Angular" >> file.txt
-      - name: Telecharger les dépendances
-        run: echo "Downloading Dependencies" >> file.txt
-      - name: build
-        run: echo "build" >> file.txt
-  DeployAPP:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        run: echo "Checking Out" >> file.txt
-      - name: Installer Node
-        run: echo "Installing Node" >> file.txt
-      - name: Installer Angular
-        run: echo "Installing Angular" >> file.txt
-      - name: Telecharger les dépendances
-        run: echo "Downloading Dependencies" >> file.txt
-      - name: build
-        run: echo "build" >> file.txt
+        run: ng build
