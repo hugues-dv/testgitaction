@@ -21,4 +21,6 @@ jobs:
       - name: changer de dossier
         run: cd buildAngular
       - name: build
-        run: npm install | ng build
+        run: |
+          npm install 
+          ng build
